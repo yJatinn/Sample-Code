@@ -32,24 +32,19 @@ public class NewTest_1 extends Before_after_suite {
 	public static void login() {
 		System.out.println("executes before every test cases");
 	}
-  @Test(priority = 0, groups = "household")
-  public void f() throws InterruptedException {
-	  driver.get("https://development.blazetrade.com/login");
-	  Thread.sleep(10000);
-	 
-	
-	driver.manage().window().maximize();
-	Logic obj1= new Logic(driver);
-	
-	obj1.user_id("ashi");
-	Thread.sleep(1000);
-	obj1.user_password("AtomAdmin1");
-	Thread.sleep(1000);
-	obj1.user_submit();
-	Thread.sleep(2000);
-	driver.close();
-	  System.out.println("this is first  test method");
-  }
+
+	/*
+	 * @Test(priority = 0, groups = "household") public void f() throws
+	 * InterruptedException {
+	 * driver.get("https://development.blazetrade.com/login"); Thread.sleep(10000);
+	 * 
+	 * 
+	 * driver.manage().window().maximize(); Logic obj1= new Logic(driver);
+	 * 
+	 * obj1.user_id("ashi"); Thread.sleep(1000); obj1.user_password("AtomAdmin1");
+	 * Thread.sleep(1000); obj1.user_submit(); Thread.sleep(2000); driver.close();
+	 * System.out.println("this is first  test method"); }
+	 */
   @Test(priority = 1, groups = "household")
   public static void second_test() {
 	  System.out.println("second test method ");
